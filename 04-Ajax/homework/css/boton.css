@@ -1,0 +1,10 @@
+.button {
+  inline-size: 5.5rem;
+  block-size: 1.75rem;
+  background: var(--gray30);
+  /* background: transparent; */
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+}

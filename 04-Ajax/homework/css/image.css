@@ -1,0 +1,30 @@
+.list {
+  inline-size: 33em;
+  max-block-size: 36.5rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  background: var(--gray50);
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.list-cover img {
+  vertical-align: middle;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.list-cover {
+  position: relative;
+  border-radius: .75rem;
+  overflow: hidden;
+  margin-block-end: 1rem;
+}
+
+.list-title {
+  font: var(--basefontBold);
+  color: var(--gray10);
+  /* margin: 0; */
+  padding-inline-start: 2rem;
+}
+

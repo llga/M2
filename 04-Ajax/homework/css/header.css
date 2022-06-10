@@ -1,0 +1,7 @@
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 25rem;
+  align-items: center;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,27 @@
+@import 'tema.css';
+@import 'boton.css';
+@import 'image.css';
+@import 'contenedor.css';
+@import 'controladores.css';
+@import 'lista.css';
+@import 'header.css';
+@import 'span.css';
+
+:root {
+  --primary: #6f3dc4;
+  --white: #efefef;
+  --gray10: #B3B3B3;
+  --gray20: #737373;
+  --gray30: #4D4D4D;
+  --gray40: #202020;
+  --gray45: #121212;
+  --gray50: #181818;
+  --gray60: #040204;
+  --basefontFamily: Avenir, Helvetica, Sans-serif;
+  --headline1: bold 2rem/normal var(--basefontFamily);
+  --headline2: bold 1.5rem/1.75rem var(--basefontFamily);
+  --basefont: normal 0.875rem/1.375rem var(--basefontFamily);
+  --basefontBold: bold 0.875rem/1.315rem var(--basefontFamily);
+  --button: bold 0.875rem/1rem var(--basefontFamily);
+  --small: normal 0.75em/normal var(--basefontFamily);
+}

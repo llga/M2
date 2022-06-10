@@ -1,0 +1,11 @@
+.body {
+  background: var(--gray50);
+  color: var(--gray10);
+  font: var(--basefont);
+  margin: 0;
+}
+.title{
+  font: var(--headline1);
+  color: var(--white);
+  margin: 0;
+}

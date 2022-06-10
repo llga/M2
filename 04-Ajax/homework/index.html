@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <title>HomeWork Ajax</title>
 </head>
-<body>
-  <button id='boton'>Ver Amigos</button>
-  <ul id='lista'>
-  </ul>
 
-  <h2>Ver Amigos</h2>
-  <img src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif' />
-  <hr>
-  <input id='input'></input>
-  <button id='search'>Buscar</button>
-  <span id='amigo'></span>
+<body class="body">
+  <div class="container">
+    <div class="header">
+      <button class="button" id='boton'>Ver Amigos</button>
+      <h2 class="title">Ver Amigos</h2>
+    </div>
+    <!-- <img src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif' /> -->
+    <div id="visible" class="list">
+      <div class="list-cover">
+        <img src="img/cargando.gif" width="150" height="150" alt="Lista de amigos">
+      </div>
+      <h3 class="list-title">Lista de amigos</h3>
+    </div>
+    <div id="hidden" class="list">
+      <ul id='lista' class="list-cover">
+      </ul>
+      <h3 class="list-title">Lista de amigos</h3>
+    </div>
+    <!-- <input id='input'></input> -->
+    <!-- <button id='search'>Buscar</button> -->
 
-  <hr>
-  <input id='inputDelete'></input>
-  <button id='delete'>Delete</button>
-  <span id='success'></span>
+    <!-- <input id='inputDelete'></input>
+    <button id='delete'>Delete</button> -->
+    <div class="controls">
+      <div class="controls-search">
+        <form class="search" action="http://localhost:5000/amigos" method="get" role="search" aria-label="Buscar">
+          <input id="input-search" class="search" type="search" placeholder="Escribe ID de un amigo">
+        </form>
+        <div class="containerBtn">
+          <button id="search" class="button">Buscar</button>
+        </div>
+        <div class="message">
+          <span id='amigo'></span>
+        </div>
+      </div>
+      <div class="controls-delete">
+        <form class="search" action="http://localhost:5000/amigos" method="delete" role="search" aria-label="Eliminar">
+          <input id="input-delete" type="search" placeholder="Escribe ID de un amigo">
+        </form>
+        <div class="container-btn">
+          <button id="delete" class="button" type="submit">Eliminar</button>
+        </div>
+        <div class="message">
+          <span id='success'></span>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="index.js"></script>
 </body>
+
 </html>

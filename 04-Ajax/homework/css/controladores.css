@@ -1,0 +1,35 @@
+@import 'buscardor.css';
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+  /* background: var(--gray40); */
+  border-radius: 0.5rem;
+  inline-size: 46rem;
+}
+
+.controls-search {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  inline-size: 32rem;
+  align-items: center;
+  margin-block-start: .5rem;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.controls-delete {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  inline-size: 32rem;
+  align-items: center;
+  margin-block-start: .5rem;
+}
