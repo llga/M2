@@ -9,6 +9,12 @@ function App() {
   return (
     <div className="App">
       <div>
+        <SearchBar
+          onSearch={(ciudad) => alert(ciudad)}
+        />
+      </div>
+      <hr />
+      <div>
         <Card
           max={Cairns.main.temp_max}
           min={Cairns.main.temp_min}
@@ -17,16 +23,10 @@ function App() {
           onClose={() => alert(Cairns.name)}
         />
       </div>
-      <hr />
+      {/* <hr /> */}
       <div>
         <Cards
           cities={data}
-        />
-      </div>
-      <hr />
-      <div>
-        <SearchBar
-          onSearch={(ciudad) => alert(ciudad)}
         />
       </div>
     </div>
